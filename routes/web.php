@@ -15,7 +15,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts/index');
+});
+Route::get("oquvchilar" , function(){
+    return view("layouts/oquvchilar");
+});
+Route::get("oqituvchilar" , function(){
+    return view("layouts/oqituvchilar");
+});
+Route::get("universitet-haqida" , function(){
+    return view("layouts/universitet-haqida");
 });
 
 Route::get('/dashboard', function () {
